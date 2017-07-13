@@ -134,7 +134,11 @@
     [UIView animateWithDuration:0.2 animations:^{
         self.redLineView.center = CGPointMake(sender.center.x, self.frame.size.height - 2);
     }];
-    [self.delegate ListSwitchViewDidClickeButtonIndex:sender.index];
+    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(listSwitchViewDidClickeButtonIndex:)]) {
+        
+        [self.delegate listSwitchViewDidClickeButtonIndex:sender.index];
+    }
 }
 
 

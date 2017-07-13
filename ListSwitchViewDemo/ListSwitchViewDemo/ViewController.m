@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    ListSwitchView *view = [[ListSwitchView alloc]initListSwitchViewWithframe:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 40) titleArray:[NSArray arrayWithObjects:@"1",@"2",@"3", nil] hasSeperatorLine:YES];
+    ListSwitchView *view = [[ListSwitchView alloc]initListSwitchViewWithframe:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 40) titleArray:[NSArray arrayWithObjects:@"item1",@"item2",@"item3", nil] hasSeperatorLine:YES];
     view.delegate = self;
     view.grayLineColor = [UIColor darkGrayColor];
     view.redLineColor = [UIColor orangeColor];
@@ -28,7 +28,7 @@
 
 #pragma mark - list switch delegate
 
-- (void)ListSwitchViewDidClickeButtonIndex:(NSInteger)buttonIndex {
+- (void)listSwitchViewDidClickeButtonIndex:(NSInteger)buttonIndex {
     
     NSLog(@"click button index ----%ld-----",buttonIndex);
 }

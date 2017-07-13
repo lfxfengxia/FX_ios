@@ -12,7 +12,7 @@
 
 @optional
 
-- (void)ListSwitchViewDidClickeButtonIndex:(NSInteger)buttonIndex;
+- (void)listSwitchViewDidClickeButtonIndex:(NSInteger)buttonIndex;
 
 @end
 
